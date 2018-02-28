@@ -1,0 +1,86 @@
+public class Car
+{
+private int yearModel; // The car's year model
+private String make; // The car's make
+private int speed; // The current speed
+Car(int year, String carMake, int newSpeed)
+{
+yearModel = year;
+make = carMake;
+speed = newSpeed;
+}
+public void setYearModel(int y)
+{
+yearModel = y;
+}
+public void setMake(String m)
+{
+make = m;
+}
+public void setSpeed(int s)
+{
+speed = s;
+}
+public int getYearModel()
+{
+return yearModel;
+}
+public String getMake()
+{
+return make;
+}
+public int getSpeed()
+{
+return speed;
+}
+public void accelerate()
+{
+speed += 5;
+}
+public void brake()
+{
+speed -= 5;
+}
+}
+
+
+
+public class CarDemo
+   
+   {
+	public static void main(String[] args)
+	{
+	int s = speed;	
+	int accelerate;
+	int brake;
+	String c;
+	
+	{
+		Car c = new Car(2012, "Mercedes-Benz S55 AMG");
+		int s = 0;
+		s = c.getSpeed();
+		for(int i = 0; i < 5; i++)
+		{
+			System.out.println("The " + c.getYearModel() + " " + c.getMake()
+			+ "\n is going " + s(accelerate));
+ 		
+			
+ 
+			System.out.println("Now the " + c.getYearModel() + " " + c.getMake()
+			+ "\n is going " + s(brake));			
+ 
+		}
+	
+		
+     // other code to accelerate or decelerate
+	}
+	  Car c = new Car(2012, "Mercedes-Benz S55 AMG");
+	  int s = 0;
+     s = c.getSpeed();
+	  for(int i = 0; i < 5; i++)
+		{
+	  
+     System.out.println("The car's current speed is " + s);
+	}
+ }
+   }
